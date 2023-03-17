@@ -10,15 +10,44 @@
   <body>
     <div class="window">
       <div class="panel">
-        <div class = "textSmall"> BuitenTemperatuur</div>
-        <div id = "outsideTemp" class = "textBig"> 8°C</div>
-        <div id = "Clock" class = "textBig"> 05:00</div>
+        <div class="textSmall">BuitenTemperatuur</div>
+        <div id="outsideTemp" class="textBig">8°C</div>
+        <div class="textSmall">
+          ---------------------------------------------------------
+        </div>
+
+        <div id="Clock" class="textBig">05:00</div>
+        <div class="textSmall">
+          ---------------------------------------------------------
+        </div>
+
+        <div class="textSmall">BinnenTemperatuur</div>
+        <div class="temptext">
+          <div id="tempactual" class="textSmallTemp">actual</div>
+          <div id="tempCase" class="textSmallTemp">case</div>
+          <div id="delta" class="textSmallTemp">delta</div>
+        </div>
+
+        <div class="temptext">
+          <div id="tempactual" class="textBig">22°C</div>
+          <div id="tempCase" class="textBig">23°C</div>
+          <div id="delta" class="textBig">-1°C</div>
+        </div>
+        <div class="textSmall">
+          ---------------------------------------------------------
+        </div>
+
         <div class="mychart"><canvas id="fixscreen1Chart"></canvas></div>
         <div class="mychart"><canvas id="fixscreen2Chart"></canvas></div>
         <div class="mychart"><canvas id="fixscreen3Chart"></canvas></div>
         <div class="mychart"><canvas id="fixscreen4Chart"></canvas></div>
       </div>
       <div class="panel2">
+        <div class="temptext">
+          <div class="textBig">Percentage Zon</div>
+          <div id="cloudPerc" class="textBig">20%</div>
+        </div>
+
         <div class="texture"><canvas id="environment"></canvas></div>
         <div class="canvasWindow"></div>
         <div class="tempchart"><canvas id="temperatureChart"></canvas></div>

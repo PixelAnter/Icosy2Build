@@ -1,79 +1,93 @@
-*{
-    margin:0;
-    padding:0;
-    
+* {
+  margin: 0;
+  padding: 0;
 }
-body
-{
-
-    width:100%;
-    height:100%;
-    display:flex;
-    background-color:rgb(255, 255, 255);
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgb(255, 255, 255);
 }
-.textSmall{
-    padding-top: 10px;
-    font-size: 100%;
-    text-align:center;
-    font-family: Arial, Helvetica, sans-serif;
-
+.textSmall {
+  padding-top: 5px;
+  font-size: 100%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.textBig{
-    padding-top: 20px;
-    font-style: bold;
-    font-size: 300%;
-    text-align:center;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-bottom:20px
+.textBig {
+  padding-top: 10px;
+  font-style: bold;
+  font-size: 200%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 5px;
+  margin-left: 25px;
+}
 
+.textSmallTemp {
+  margin: 30px;
+  margin-bottom: 1px;
+  margin-top: 5px;
+  font-style: italic;
+  font-size: 60%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.temptext {
+  justify-content: center;
+  display: flex;
+  z-index: 1;
+  margin-top: 10px;
 }
 .window {
-
-    position:relative;
-    width:100%;
-    height:100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
-.panel {    
-    top:50px;
-    left:20px;
-    width: 20%;
-    position:absolute;
-    flex-direction: column;
+.panel {
+  top: 20px;
+  left: 20px;
+  width: 20%;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .panel2 {
-    top:150px;
-    position:absolute;
-    left:23%;
-    width:75%;
-    flex-direction: column;
+  top: 20px;
+  position: absolute;
+  left: 23%;
+  width: 75%;
+  flex-direction: column;
 }
+
 .mychart {
-    top:2%;
-    left:10%;
-    z-index:1
+  top: 2%;
+  left: 10%;
+  z-index: 1;
 }
 .tempchart {
-    bottom:0;
-    width:1280px;
-    left:0;
-    z-index:1
+  bottom: 0;
+  left: 30%;
+  position: fixed;
+  width: 1280px;
+  height: 230px;
+  z-index: 1;
+  bottom: 5%;
 }
-.texture{
-    /*background: url("../Assets/Timelapse/timelapse_0_0000.jpg");
+.texture {
+  /*background: url("../Assets/Timelapse/timelapse_0_0000.jpg");
     background-repeat: no-repeat;*/
-    top:0%;
-    width:1280px;
-    height:720px;
-    z-index: 1;
-    
-
+  top: 0%;
+  width: 1280px;
+  height: 720px;
+  z-index: 1;
 }
 .canvasWindow {
-    aspect-ratio: 16/9;
-    top:0%;
-    z-index: 0;
-    width:1280px;
-    height:720px;
-    position: inherit;
+  position: fixed;
+  top: 10%;
+  left: 30%;
+  z-index: 0;
+  width: 1280px;
+  height: 720px;
 }
